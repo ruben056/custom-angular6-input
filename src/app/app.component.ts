@@ -12,6 +12,7 @@ export class AppComponent {
   txt1 = new Field('content of the field1', true, true, true);
   txtDisabled = new Field('content of the disabled field', true, false, true);
   txtHidden = new Field('content of the field hidden field', false,true , true);
+  txtForValidation = new Field('for validation', true,true , true);
 
   satisfaction = new Choice('I_CANT_GET_NONE', true, true,
   ['I_CANT_GET_NONE', 'BAD',  'GOOD', 'VERYGOOD', 'NIRVANA']);

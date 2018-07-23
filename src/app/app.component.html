@@ -9,6 +9,12 @@
     <app-input-field-type [ngModel]="txtDisabled"></app-input-field-type>
   </p>
 
+  <p>
+    <app-input-field-type [ngModel]="txtForValidation" #inputForValidation="ngModel" customValidator></app-input-field-type>
+  </p>
+  <div>
+    {{inputForValidation.errors?.customValidator?.message}}
+  </div>
 
   <p>
     <app-mc-field-type [ngModel]="satisfaction" (ngModelChange)="logChange($event)"></app-mc-field-type>

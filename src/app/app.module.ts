@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { InputFieldTypeComponent } from './input-field-type/input-field-type.component';
 import { McFieldTypeComponent } from './mc-field-type/mc-field-type.component';
 
+import { CustomValidator } from './model/custom-validator';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     InputFieldTypeComponent,
-    McFieldTypeComponent
+    McFieldTypeComponent,
+    CustomValidator
   ],
   imports: [
     BrowserModule,
