@@ -1,0 +1,6 @@
+<input
+  *ngIf="fieldInfo?.visible"
+  [attr.disabled]="!fieldInfo?.enabled ? 'whatever': null"
+  [attr.value]="fieldInfo?.waarde"
+  (keyup)=updateModel($event)
+  type="text"/>

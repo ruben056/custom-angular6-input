@@ -1,0 +1,10 @@
+
+<ng-container *ngIf="choice?.visible">
+  <div *ngFor="let value of choice.possibleValues">
+  <input type="radio"
+      [attr.disabled]="!choice?.enabled ? 'whatever': null"
+      [checked]="value === choice.waarde"
+      (change)="updateModel(value)">
+      {{value}}
+  </div>
+<ng-container>
